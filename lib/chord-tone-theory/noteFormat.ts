@@ -22,6 +22,7 @@ class NoteFormatImpl implements NoteFormat {
         }
     }
     text(note : noteObjectType): string {
+        console.log(note);
         return note.note + this.translateAccidental(note.accidental);
     }
     texts(notes : noteObjectType[]): string[]{
