@@ -1,12 +1,12 @@
 import { chordType } from "../../../lib/chord-tone-theory/@types/chord";
-import { ChordAppHandlerRepository } from "../../../lib/chord-tone-theory/chordAppHandler";
+import { ChordToneTheoryHandlerRepository } from "../../../lib/chord-tone-theory/chordToneTheoryHandler";
 
 import { noteObjects } from "../../fixtures/noteObjects";
 import { chordDetails } from "../../fixtures/chordDetail";
-describe("Testing ''ChordAppHandlerRepository", () => {
+describe("Testing ''ChordToneTheoryHandlerRepository", () => {
 
     it("'getViewChordObjects", () => {
-        expect(ChordAppHandlerRepository([1,5,8]).getViewChordObjects([{
+        expect(ChordToneTheoryHandlerRepository([1,5,8]).getViewChordObjects([{
             chord: {
                 root : noteObjects.C,
                 trueRoot : noteObjects.C,
@@ -34,7 +34,7 @@ describe("Testing ''ChordAppHandlerRepository", () => {
             },
             score : 100
         }]);
-        expect(ChordAppHandlerRepository([1,5,9]).getViewChordObjects([{
+        expect(ChordToneTheoryHandlerRepository([1,5,9]).getViewChordObjects([{
             chord: {
                 root : noteObjects.C,
                 trueRoot : noteObjects.C,
@@ -63,7 +63,7 @@ describe("Testing ''ChordAppHandlerRepository", () => {
         }]);
     });
     it("'getChordObjects'", () => {
-        expect(ChordAppHandlerRepository([1,5,12]).getChordObjects()).toEqual([
+        expect(ChordToneTheoryHandlerRepository([1,5,12]).getChordObjects()).toEqual([
             {
                 chord : {
                     root : noteObjects.C,
@@ -84,7 +84,7 @@ describe("Testing ''ChordAppHandlerRepository", () => {
                 score : 99
             }
         ]);
-        expect(ChordAppHandlerRepository([2,6,13]).getChordObjects()).toEqual([
+        expect(ChordToneTheoryHandlerRepository([2,6,13]).getChordObjects()).toEqual([
             {
                 chord : {
                     root : noteObjects.Db,
@@ -105,7 +105,7 @@ describe("Testing ''ChordAppHandlerRepository", () => {
                 score : 99
             }
         ]);
-        expect(ChordAppHandlerRepository([12,8]).getChordObjects()).toEqual([
+        expect(ChordToneTheoryHandlerRepository([12,8]).getChordObjects()).toEqual([
             {
                 chord : {
                     root : noteObjects.G,

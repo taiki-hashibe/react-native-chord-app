@@ -7,7 +7,7 @@ import { Root, RootRepository } from "./root";
 import { ChordFormat, ChordFormatRepository } from "./chordFormat";
 import { NoteFormat, NoteFormatRepository } from "./noteFormat";
 
-export interface ChordAppHandler {
+export interface ChordToneTheoryHandler {
     planeInputNotes : number[];
     input : Input;
     note : NoteObject;
@@ -21,7 +21,7 @@ export interface ChordAppHandler {
     chordAppHandler(): { chord : formatChordType; score: number; }[]
 }
 
-class ChordAppHandlerImpl implements ChordAppHandler {
+class ChordToneTheoryHandlerImpl implements ChordToneTheoryHandler {
     input : Input;
     planeInputNotes: number[];
     note : NoteObject;
@@ -88,6 +88,6 @@ class ChordAppHandlerImpl implements ChordAppHandler {
     }
 }
 
-export const ChordAppHandlerRepository = (planeInputNotes : number[]) => {
-    return new ChordAppHandlerImpl(planeInputNotes);
+export const ChordToneTheoryHandlerRepository = (planeInputNotes : number[]) => {
+    return new ChordToneTheoryHandlerImpl(planeInputNotes);
 }

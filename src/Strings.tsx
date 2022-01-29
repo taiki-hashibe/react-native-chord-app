@@ -1,7 +1,7 @@
 import { View, ScrollView ,Text, TouchableHighlight} from "react-native"
 import { useState ,Dispatch ,SetStateAction, useEffect, useLayoutEffect} from "react";
 import { styles } from "./styles/styles";
-import { ChordAppHandlerRepository } from "../lib/chord-tone-theory/chordAppHandler";
+import { ChordToneTheoryHandlerRepository } from "../lib/chord-tone-theory/chordToneTheoryHandler";
 import { NoteObjectsRepository } from "../lib/chord-tone-theory/noteObject";
 import { formatChordType } from "../lib/chord-tone-theory/@types/chord";
 import { InputRepository } from "../lib/chord-tone-theory/input";
@@ -34,7 +34,7 @@ export function Strings (props : {turnings : number[]}) {
             }
         });
         numbers = numbers.sort();
-        const chord : { chord : formatChordType; score: number; }[] = ChordAppHandlerRepository(numbers).chordAppHandler();
+        const chord : { chord : formatChordType; score: number; }[] = ChordToneTheoryHandlerRepository(numbers).chordAppHandler();
         chord.map((c) => {
             if(c.chord.chordRoot == c.chord.root){
                 console.log(c.chord.chordName)
