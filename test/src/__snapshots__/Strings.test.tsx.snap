@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Strings /> <Fret /> 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#EDEDED",
+        "borderLeftColor": "#626366",
+        "borderLeftWidth": 2,
+        "borderTopColor": "#F5F4F4",
+        "borderTopWidth": 1,
+        "display": "flex",
+        "height": 36,
+        "width": 100,
+      }
+    }
+  >
+    <Text>
+      2
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`<Strings /> <String /> 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#EDEDED",
+        "borderLeftColor": "#626366",
+        "borderLeftWidth": 2,
+        "borderTopColor": "#F5F4F4",
+        "borderTopWidth": 1,
+        "display": "flex",
+        "height": 36,
+        "width": 100,
+      }
+    }
+  >
+    <Text>
+      2
+    </Text>
+  </View>
+</View>
+`;
