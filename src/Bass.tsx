@@ -1,9 +1,7 @@
-import { Text } from "react-native"
+import { Strings } from "./Strings"
 
 export function Bass() {
     return(
-        <Text>
-            Bass
-        </Text>
+        <Strings turnings={[20,15,10,5]}></Strings>
     )
 }

@@ -1,8 +1,7 @@
-import { Dispatch, SetStateAction } from "react";
-import { Text } from "react-native";
+import { Strings } from "./Strings";
 
-export function Guitar(props : {inputNotes : number[], setInput : Dispatch<SetStateAction<number[]>>}) {
+export function Guitar() {
     return(
-        <></>
+        <Strings turnings={[29,24,20,15,10,5]}></Strings>
     )
 }

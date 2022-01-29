@@ -1,14 +1,12 @@
 import { useEffect, useState ,useContext, createContext} from "react";
 
 import { StyleSheet ,View ,Text} from "react-native";
-import { Strings } from "./Strings";
+import { Guitar } from "./Guitar";
 
 export function Index() {
-    const [inputNotes, setInputNotes] = useState<number[]>([]);
-
     return(
         <View style={styles.index}>
-            <Strings turnings={[29,24,20,15,10,5]}></Strings>
+            <Guitar/>
         </View>
     )
 }
