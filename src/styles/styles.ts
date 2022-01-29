@@ -40,5 +40,42 @@ export const styles = StyleSheet.create({
         borderLeftColor : "#626366",
         borderTopWidth : 1,
         borderTopColor : "#F5F4F4"
+    },
+    piano_keyboard : {
+        display : "flex",
+        flexDirection : "row",
+        justifyContent : "flex-start",
+        alignItems : "flex-start"
+
+    },
+    piano_white_keyboard : {
+        width : 72,
+        height : 140,
+        backgroundColor : "#FAF8E6",
+        borderWidth : 1,
+        borderColor : "#1C2225",
+        display : "flex",
+        justifyContent : "flex-end",
+        alignItems : "center"
+    },
+    piano_white_keyboard_active : {
+        width : 72,
+        height : 140,
+        backgroundColor : "#BCD9EA",
+        borderWidth : 1,
+        borderColor : "#cccccc",
+        display : "flex",
+        justifyContent : "flex-end",
+        alignItems : "center"
+    },
+    piano_black_keyboard : {
+        width : 35,
+        height : 82,
+        backgroundColor : "#171717",
+        position : "absolute",
+        left : -17,
+        display : "flex",
+        justifyContent : "flex-end",
+        alignItems : "center"
     }
 })

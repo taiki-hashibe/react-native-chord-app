@@ -2,11 +2,13 @@ import { useEffect, useState ,useContext, createContext} from "react";
 
 import { StyleSheet ,View ,Text} from "react-native";
 import { Guitar } from "./Guitar";
+import { Bass } from "./Bass";
+import { Piano } from "./Piano";
 
 export function Index() {
     return(
         <View style={styles.index}>
-            <Guitar/>
+            <Piano/>
         </View>
     )
 }

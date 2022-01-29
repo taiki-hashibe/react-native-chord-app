@@ -2,9 +2,7 @@ import { View, ScrollView ,Text, TouchableHighlight} from "react-native"
 import { useState ,Dispatch ,SetStateAction, useEffect, useLayoutEffect} from "react";
 import { styles } from "./styles/styles";
 import { ChordToneTheoryHandlerRepository } from "../lib/chord-tone-theory/chordToneTheoryHandler";
-import { NoteObjectsRepository } from "../lib/chord-tone-theory/noteObject";
 import { formatChordType } from "../lib/chord-tone-theory/@types/chord";
-import { InputRepository } from "../lib/chord-tone-theory/input";
 
 export function Strings (props : {turnings : number[]}) {
     let stringObj : {
